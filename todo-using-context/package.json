@@ -1,5 +1,5 @@
 {
-  "name": "theme-switcher",
+  "name": "todo-using-context",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "theme-switcher": "file:"
+    "todo-using-context": "file:"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
@@ -26,7 +26,6 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.11.0",
     "postcss": "^8.4.49",
-    "tailwind": "^4.0.0",
     "tailwindcss": "^3.4.15",
     "vite": "^5.4.10"
   }
