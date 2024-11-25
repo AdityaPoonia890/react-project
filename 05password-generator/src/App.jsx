@@ -31,7 +31,7 @@ function App() {
        setPassword(pass);  
    } , [length,numAllowed,charAllowed,setPassword]);
 
-  const pass = useEffect(()=>{
+   useEffect(()=>{
    passwrordGenerator()
   } , [length , charAllowed , numAllowed ,setPassword]);
 
