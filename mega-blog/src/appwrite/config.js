@@ -1,5 +1,5 @@
 import conf from "../conf/conf";
-import {ID, Client, Account} from "appwrite"
+import {ID, Client, Account, Databases, Storage,Query} from "appwrite"
 
 export class Service{
     client = new Client();
@@ -80,7 +80,7 @@ export class Service{
 
     async getPosts(queries = [Query.equal("status", "active")]){
         try {
-            return await this.databases.getDocument(
+            return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 queries
@@ -123,5 +123,5 @@ export class Service{
     }
 }
 
-const service = new Service();
-export default service;
+const service = new Service()
+export default service
